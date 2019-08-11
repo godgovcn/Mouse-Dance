@@ -42,9 +42,11 @@ wss.on('connection', function (ws) {
       sedpush(id)
     }
     if (data.state == 'update') {
-      list[data.inf.id].x = data.inf.x
-      list[data.inf.id].y = data.inf.y
-      list[data.inf.id].msg = data.inf.msg
+      if (typeof (list[data.inf.id]) != "undefined") {
+        list[data.inf.id].x = data.inf.x
+        list[data.inf.id].y = data.inf.y
+        list[data.inf.id].msg = data.inf.msg
+      }
       sedpush(id)
     }
   })

@@ -1,6 +1,5 @@
 <template>
   <div id="mousedance">
-    {{usr}}
     <div id="md-bar" :style="{left:(mdswitch ? '0px':'-230px')}">
       <div>
         <div v-if="!state">
