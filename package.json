@@ -1,0 +1,20 @@
+{
+  "name": "Mouse-Dance",
+  "version": "1.0.0",
+  "description": "一坨鼠标来尬舞",
+  "main": "index.js",
+  "repository": "https://github.com/FireUnicornser/Mouse-Dance",
+  "author": "FireUnicornser <FireUnicornser@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "forever start ./index.js",
+    "lists": "forever list",
+    "stop": "forever stop ./index.js",
+    "restart": "forever restart ./index.js"
+  },
+  "dependencies": {
+    "forever": "^1.0.0",
+    "socket.io": "^2.2.0",
+    "ws": "^7.1.1"
+  }
+}
